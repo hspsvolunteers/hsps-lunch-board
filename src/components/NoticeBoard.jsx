@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { NeuButton } from './NeuComponents';
 import { NeuCard, StatusTag, Chevron, formatDate } from './NeuExtras';
 import { fetchPublicIssues } from '../api';
+import heroImage from '../assets/hero.jpeg';
+import iconImage from '../assets/icon.png';
 
 const IssueCard = ({ issue }) => {
   const [open, setOpen] = useState(false);
@@ -90,7 +92,7 @@ const NoticeBoard = () => {
         <div className="mb-10 overflow-hidden rounded-3xl bg-neu-base p-2 sm:p-3 shadow-neu-flat">
           <div className="overflow-hidden rounded-2xl">
             <img
-              src="/hero.jpeg"
+              src={heroImage}
               alt="胡適國小 營養午餐問題反應站"
               className="w-full h-auto aspect-[1280/627] object-cover block transition-transform duration-500 hover:scale-[1.01]"
             />
@@ -100,7 +102,7 @@ const NoticeBoard = () => {
         <header className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="flex items-center gap-4">
             <img
-              src="/icon.png"
+              src={iconImage}
               alt="胡適國小"
               className="h-14 w-14 shrink-0 rounded-2xl bg-neu-base p-1.5 shadow-neu-flat object-contain"
             />
