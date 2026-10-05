@@ -341,7 +341,10 @@ const AdminDashboard = () => {
             <p className="text-xs font-medium tracking-[0.3em] text-slate-400">COMMITTEE DASHBOARD</p>
             <h1 className="mt-2 text-2xl font-bold text-neu-text sm:text-3xl">午餐案件管理</h1>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap items-center gap-4">
+            <NeuButton id="btn-home" onClick={() => navigate('/')}>
+              回到首頁
+            </NeuButton>
             <NeuButton id="btn-admin-refresh" onClick={load} disabled={loading}>
               重新整理
             </NeuButton>
