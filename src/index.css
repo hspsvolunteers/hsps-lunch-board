@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply min-h-screen bg-neu-base text-neu-text antialiased;
+  }
+
+  body {
+    font-family: 'Noto Sans TC', system-ui, -apple-system, 'PingFang TC', sans-serif;
+  }
+}
